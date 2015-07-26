@@ -19,6 +19,8 @@
       '(
         ;; post extension names go here
         ))
+(defvar auto-completion-enable-snippets-in-popup nil
+  "If non nil show snippets in the auto-completion popup.")
 (defvar company-mode-completion-cancel-keywords
   '("do"
     "then"

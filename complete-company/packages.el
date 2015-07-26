@@ -16,6 +16,7 @@
     '(
       ;; package names go here
       company
+      company-anaconda
       ))
 
 ;; List of packages to exclude.
