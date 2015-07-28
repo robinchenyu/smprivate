@@ -56,6 +56,16 @@
       (company-mode t))))
 
 
+(when (configuration-layer/layer-usedp 'go)
+  (defun go/post-init-company ()
+    (spacemacs|add-company-hook go-mode))
+
+  (defun go/init-company-go ()
+    (use-package company-go
+      :if (configuration-layer/package-usedp 'go)
+      :defer t
+      :init
+      (push 'company-go company-backends-go-mode))))
 
 
 
